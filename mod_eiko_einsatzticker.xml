@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="3.1"
+	client="site"
+	method="upgrade">
+	<name>mod_eiko_einsatzticker</name>
+	<author>Thomas Eisold</author>
+	<creationDate>Juni 2014</creationDate>
+	<copyright>einsatzkomponente.de</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@feuerwehr-weixdorf.de</authorEmail>
+	<authorUrl>www.einsatzkomponente.de</authorUrl>
+	<version>1.01</version>
+	<description>Das Module dient der Anzeige der letzten Einsätze als Lauftext auf der Frontpage</description>
+	 <files>
+    <filename module="mod_eiko_einsatzticker">mod_eiko_einsatzticker.php</filename>
+    <filename>index.html</filename>
+ 	<filename>tmpl/default.php</filename>
+    <filename>tmpl/index.html</filename>
+	</files>
+ <config>
+		<fields name="params">
+			<fieldset name="basic">
+			
+    <field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix :" description="PARAMMODULECLASSSUFFIX" />
+		<field
+			name="spacer214"
+			type="spacer"
+			hr="true"
+		/>
+	<field name="feuerwehr" type="text" default="XY" label="Name der Organisation" description="" size="40" />
+
+	<field name="first" type="text" default="" label="Blitz-Meldung :" description="Dieser Text erscheint vor der Einsatzmeldung" />
+	<field name="links" type="text" default="" label="Link für Blitz-Meldung :" description="Dieser Link ist nur aktiv, wenn nur die Blitz-Meldung im Scrolltext angezeigt wird." />
+
+		<field name="show" type="radio" default="1" label="nur Blitz-Meldung zeigen ?" description="">
+
+		<option value="0">Ja </option>	
+
+		<option value="1">Nein</option>
+
+		</field>
+				<field
+			name="spacer254"
+			type="spacer"
+			hr="true"
+		/>
+		
+		<field name="colorlink" type="color" default="#ff0000" label="Textfarbe für Newsscroller? #" description="">
+		</field>
+		<field name="bgcolor" type="color" default="#ffffff" label="Hintergrundfarbe für Newsscroller? #" description="">
+		</field>
+		<field name="scrollamount" type="text" default="5" label="Scrollgeschwindigkeit:" description="Einstellen der Laufgeschwindigkeit des Textes" />
+				<field
+			name="spacer742"
+			type="spacer"
+			hr="true"
+		/>
+    <field name="menu_none" type="text" default="kein Einsatz gefunden" label="kein Einsatz gefunden" description="kein Einsatz gefunden" />    
+				<field
+			name="spacer454"
+			type="spacer"
+			hr="true"
+		/>
+	<field name="width" type="text" default="100%" label="Scroller Breite :" description="" />
+	<field name="height" type="text" default="25px" label="Scroller Höhe :" description="" />
+
+		<field
+			name="spacer234"
+			type="spacer"
+			hr="true"
+		/>
+	<field name="mymenuitem" type="menuitem" default="" label="Menüeintrag für die Einsatzübersicht" description="Bitte unbedingt den Menüeintrag für die Einsatzübersicht hier festlegen" />
+
+ </fieldset>
+		</fields>
+	</config>
+  
+</extension>
