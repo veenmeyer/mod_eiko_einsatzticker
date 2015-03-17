@@ -17,7 +17,7 @@ $link = JRoute::_('index.php?option=com_einsatzkomponente&Itemid='.$mymenuitem.'
 
 $first ='';
 
-$outData = '<a style="color:'.$colorlink.'" href="' .$first . '' . $link . '" target="_self"" >Letzter&nbsp;Einsatz:&nbsp;<b>>'.$frontReports[0]->data1.'&nbsp;-&nbsp;'.$frontReports[0]->summary.'<</b>&nbsp;am&nbsp;'.date('d.m.Y', strtotime($frontReports[0]->date1)).'&nbsp;um'.date(' H:i', strtotime($frontReports[0]->date1)).'&nbsp;Uhr </style></a>';
+$outData = '<a style="color:'.$colorlink.'" href="' .$first . '' . $link . '" target="_self"" >Letzter&nbsp;Einsatz:&nbsp;<b>>'.$frontReports[0]->einsatzart.'&nbsp;-&nbsp;'.$frontReports[0]->summary.'<</b>&nbsp;am&nbsp;'.date('d.m.Y', strtotime($frontReports[0]->date1)).'&nbsp;um'.date(' H:i', strtotime($frontReports[0]->date1)).'&nbsp;Uhr </style></a>';
 
 }
 

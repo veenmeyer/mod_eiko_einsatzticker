@@ -6,7 +6,7 @@
 	method="upgrade">
 	<name>mod_eiko_einsatzticker</name>
 	<author>Thomas Eisold</author>
-	<creationDate>Juni 2014</creationDate>
+	<creationDate>17.03.15</creationDate>
 	<copyright>einsatzkomponente.de</copyright>
 	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
 	<authorEmail>info@feuerwehr-weixdorf.de</authorEmail>
