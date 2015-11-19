@@ -6,12 +6,12 @@
 	method="upgrade">
 	<name>mod_eiko_einsatzticker</name>
 	<author>Thomas Eisold</author>
-	<creationDate>12.07.15</creationDate>
+	<creationDate>19.11.15</creationDate>
 	<copyright>einsatzkomponente.de</copyright>
 	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
 	<authorEmail>info@feuerwehr-weixdorf.de</authorEmail>
 	<authorUrl>www.einsatzkomponente.de</authorUrl>
-	<version>1.02</version>
+	<version>1.03</version>
 	<description><![CDATA[<div style="border:1px solid #000; padding-left:5px;"><span style=" font-size: 18px; color:#F00;"><b>od_eiko_einsatzticker für J3.x</b></span><br/><br/><span style="font-size:10px;"></span>Das Modul dient zur Anzeige des letzten Einsatzes als Lauftext auf der Homepage<br/><br/>Für weitere Informationen besuchen Sie bitte unser Supportforum <a href="http://www.einsatzkomponente.de" target="_blank">einsatzkomponente.de</a> </div>
 	]]></description>	
 	 <files>
@@ -78,4 +78,10 @@
 		</fields>
 	</config>
   
+  <!-- UPDATESERVER DEFINITION -->
+	<updateservers>
+		<!-- Note: No spaces or linebreaks allowed between the server tags -->
+		<server type="extension" priority="1" name="mod_eiko_chart">http://www.feuerwehr-veenhusen.de/update/com_einsatzkomponente-update.xml</server>
+	</updateservers>
+
 </extension>
