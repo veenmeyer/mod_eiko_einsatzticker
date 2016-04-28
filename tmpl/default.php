@@ -12,13 +12,17 @@ if($show != 0){
 	$outData = '<a style="color:'.$colorlink.'" class="eiko_einsatzticker" href="' .$first.$link . '" target="_self" >Letzter&nbsp;Einsatz:&nbsp;<b>>'.$frontReports[0]->einsatzart.'&nbsp;-&nbsp;'.$frontReports[0]->summary.'<</b>&nbsp;am&nbsp;'.date('d.m.Y', strtotime($frontReports[0]->date1)).'&nbsp;um'.date(' H:i', strtotime($frontReports[0]->date1)).'&nbsp;Uhr </style></a>';
 }
 
-
+?>
+	<style type="text/css">
+	<?php echo $params->get('css');?>
+	</style>
+<?php
 
 if($first != ''){
-	$outData = '<span style="color:'.$colorlink.';">'.$first.'</style></span>';	
+	$outData = '<span style="color:'.$colorlink.';" class="eiko_einsatzticker_first">'.$first.'</style></span>';	
 } else {
 	$outData = $outData;
 }
 
-  echo '<marquee bgcolor='.$bgcolor.' scrollamount='.$scrollamount.' width='.$width.' height='.$height.' first='.$first.'  link='.$link.'> '.$outData.'</marquee>';
+  echo '<marquee bgcolor='.$bgcolor.' scrollamount='.$scrollamount.' width='.$width.' height='.$height.' first='.$first.'  link='.$link.' class="eiko_einsatzticker_marquee" > '.$outData.'</marquee>';
 ?>

@@ -6,13 +6,13 @@
 	method="upgrade">
 	<name>mod_eiko_einsatzticker</name>
 	<author>Thomas Eisold</author>
-	<creationDate>19.11.15</creationDate>
+	<creationDate>28.04.16</creationDate>
 	<copyright>einsatzkomponente.de</copyright>
 	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
 	<authorEmail>info@feuerwehr-weixdorf.de</authorEmail>
 	<authorUrl>www.einsatzkomponente.de</authorUrl>
-	<version>1.03</version>
-	<description><![CDATA[<div style="border:1px solid #000; padding-left:5px;"><span style=" font-size: 18px; color:#F00;"><b>od_eiko_einsatzticker für J3.x</b></span><br/><br/><span style="font-size:10px;"></span>Das Modul dient zur Anzeige des letzten Einsatzes als Lauftext auf der Homepage<br/><br/>Für weitere Informationen besuchen Sie bitte unser Supportforum <a href="http://www.einsatzkomponente.de" target="_blank">einsatzkomponente.de</a> </div>
+	<version>1.04</version>
+	<description><![CDATA[<div style="border:1px solid #000; padding-left:5px;"><span style=" font-size: 18px; color:#F00;"><b>mod_eiko_einsatzticker für J3.x</b></span><br/><br/><span style="font-size:10px;"></span>Das Modul dient zur Anzeige des letzten Einsatzes als Lauftext auf der Homepage<br/><br/>Für weitere Informationen besuchen Sie bitte unser Supportforum <a href="http://www.einsatzkomponente.de" target="_blank">einsatzkomponente.de</a> </div>
 	]]></description>	
 	 <files>
     <filename module="mod_eiko_einsatzticker">mod_eiko_einsatzticker.php</filename>
@@ -74,6 +74,13 @@
 		/>
 	<field name="mymenuitem" type="menuitem" default="" label="Menüeintrag für die Einsatzübersicht" description="Bitte unbedingt den Menüeintrag für die Einsatzübersicht hier festlegen" />
 
+					<field
+					name="css"
+					type="textarea" rows="10"
+					label="CSS-Style"
+					default=""
+					description="Anpassen des CSS-Style" />
+	
  </fieldset>
 		</fields>
 	</config>
